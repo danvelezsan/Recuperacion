@@ -17,7 +17,7 @@ class Vehiculo extends Model
 
     public function dueno()
     {
-        return $this->hasOne('App\Persona', 'dueno', 'cedula');
+        return $this->belongsTo('App\Persona', 'dueno', 'cedula');
     }
-
+    
 }
