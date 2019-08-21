@@ -12,7 +12,7 @@ class Persona extends Model
     
     public function vehiculo()
     {
-        return $this->hasOne('App\Persona', 'dueno', 'cedula');
+        return $this->hasOne('App\Vehiculo', 'dueno', 'cedula');
     }
 
 }
